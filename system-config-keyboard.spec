@@ -3,7 +3,7 @@
 
 Name:           system-config-keyboard
 Version:        1.3.1
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        A graphical interface for modifying the keyboard
 
 Group:          System Environment/Base
@@ -18,7 +18,7 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  gettext
 BuildRequires:  intltool
 
-Requires:       python
+Requires:       system-config-keyboard-base = %{version}-%{release}
 Requires:       usermode >= 1.36
 Requires:       firstboot
 %ifnarch s390 s390x
@@ -31,6 +31,17 @@ Obsoletes:      redhat-config-keyboard
 %description
 system-config-keyboard is a graphical user interface that allows 
 the user to change the default keyboard of the system.
+
+
+%package base
+Summary:        system-config-keyboard base components
+Group:          System Environment/Base
+License:        GPLv2+
+Requires:       python
+Requires:       dbus-python
+
+%description base
+Base components of system-config-keyboard.
 
 
 %prep
@@ -70,9 +81,8 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 
-%files -f %{name}.lang
+%files
 %defattr(-,root,root)
-%doc COPYING
 %{_sbindir}/system-config-keyboard
 %{_bindir}/system-config-keyboard
 %{_datadir}/system-config-keyboard
@@ -81,10 +91,19 @@ fi
 %attr(0644,root,root) %config %{_sysconfdir}/security/console.apps/system-config-keyboard
 %attr(0644,root,root) %config %{_sysconfdir}/pam.d/system-config-keyboard
 %attr(0644,root,root) %{_datadir}/icons/hicolor/48x48/apps/system-config-keyboard.png
+
+
+%files base -f %{name}.lang
+%defattr(-,root,root)
+%doc COPYING
 %{python_sitelib}/system_config_keyboard
 
 
 %changelog
+* Tue Jan  3 2012 Thomas Woerner <twoerner@redhat.com> 1.3.1-4
+- split out base components into base sub package (rhbz#771389)
+- added missing requirement for dbus-python to base package
+
 * Mon Jul 19 2010 Thomas Woerner <twoerner@redhat.com> 1.3.1-3
 - dropped
     ar-azerty, ar-azerty-digits, ar-digits, ar-qwerty, ar-qwerty-digits,
