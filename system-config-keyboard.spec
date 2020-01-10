@@ -3,7 +3,7 @@
 
 Name:           system-config-keyboard
 Version:        1.3.1
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        A graphical interface for modifying the keyboard
 
 Group:          System Environment/Base
@@ -20,7 +20,6 @@ BuildRequires:  intltool
 
 Requires:       system-config-keyboard-base = %{version}-%{release}
 Requires:       usermode >= 1.36
-Requires:       firstboot
 %ifnarch s390 s390x
 Requires:       pyxf86config
 %endif
@@ -100,6 +99,9 @@ fi
 
 
 %changelog
+* Fri Jun 07 2013 Nils Philippsen <nils@redhat.com> - 1.3.1-5
+- remove firstboot dependency (#952125)
+
 * Tue Jan  3 2012 Thomas Woerner <twoerner@redhat.com> 1.3.1-4
 - split out base components into base sub package (rhbz#771389)
 - added missing requirement for dbus-python to base package
