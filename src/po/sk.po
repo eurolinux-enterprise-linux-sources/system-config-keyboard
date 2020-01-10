@@ -1,0 +1,534 @@
+# Slovak messages for system-config-keyboard
+# Copyright (C) 2003 Marcel Telka
+#
+# Marcel Telka <marcel@telka.sk>, 2003.
+# Ondrej Šulek <feonsu@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-keyboard\n"
+"Report-Msgid-Bugs-To: lkundrak@v3.sk\n"
+"POT-Creation-Date: 2009-07-27 03:11+0200\n"
+"PO-Revision-Date: 2009-09-08 20:10+0200\n"
+"Last-Translator: Ondrej Šulek <feonsu@gmail.com>\n"
+"Language-Team: Slovak <fedora-trans-sk@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.4\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: ../system-config-keyboard.desktop.in.h:1
+msgid "Configure the system keyboard"
+msgstr "Nastaviť systémovú klávesnicu"
+
+#: ../system-config-keyboard.desktop.in.h:2 ../src/keyboard_gui.py:104
+#: ../src/keyboard_gui.py:105 ../src/keyboard_gui.py.orig:104
+#: ../src/keyboard_gui.py.orig:105
+msgid "Keyboard"
+msgstr "Klávesnica"
+
+#: ../src/keyboard_cli.py:35
+msgid ""
+"Usage: system-config-keyboard [--help] [--noui] [--text] [<keyboardtype>]\n"
+"       --help            Print out this message.\n"
+"       --noui            Run in command line mode.\n"
+"       --text            Run in text interface mode.\n"
+"       "
+msgstr ""
+"Použitie: system-config-keyboard [--help] [--noui] [--text] "
+"[<typ_klávesnice>]\n"
+"       --help            Vypísať túto správu.\n"
+"       --noui            Spustiť v režime príkazového riadku.\n"
+"       --text            Spustiť v režime textového rozhrania.\n"
+"       "
+
+#: ../src/keyboard_cli.py:45
+msgid "<keyboardtype> options are:"
+msgstr "Voľby <typ_klávesnice> sú:"
+
+#: ../src/keyboard_cli.py:56
+msgid "You must specify a valid keyboard type."
+msgstr "Musíte zadať platný typ klávesnice."
+
+#: ../src/keyboard_cli.py:57
+msgid "Run 'system-config-keyboard --help' to see a list of keymaps."
+msgstr ""
+"Spustite 'system-config-keyboard --help', aby ste videli zoznam klávesových "
+"máp."
+
+#: ../src/keyboard_cli.py:72
+#, python-format
+msgid ""
+"'%s' is an invalid keymap.  Please run 'system-config-keyboard --help' for a "
+"list of keymaps"
+msgstr ""
+"'%s' je neplatná klávesová mapa. Prosím spustite 'system-config-keyboard --"
+"help', aby ste získali zoznam klávesových máp"
+
+#: ../src/keyboard_gui.py:141 ../src/keyboard_gui.py.orig:141
+#: ../src/keyboard_tui.py:52
+msgid "Select the appropriate keyboard for the system."
+msgstr "Vyberte vhodnú klávesnicu pre systém."
+
+#. bb = ButtonBar(screen, [_("OK"), _("Cancel")])
+#: ../src/keyboard_tui.py:50
+msgid "OK"
+msgstr "Ok"
+
+#: ../src/keyboard_tui.py:50
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: ../src/keyboard_tui.py:68
+msgid "Keyboard Selection"
+msgstr "Výber klávesnice"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:50
+msgid "keyboard|Arabic (azerty)"
+msgstr "keyboard|Arabská (azerty)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:53
+msgid "keyboard|Arabic (azerty/digits)"
+msgstr "keyboard|Arabská (azerty/číslice)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:56
+msgid "keyboard|Arabic (digits)"
+msgstr "keyboard|Arabská (číslice)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:59
+msgid "keyboard|Arabic (qwerty)"
+msgstr "keyboard|Arabská (qwerty)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:62
+msgid "keyboard|Arabic (qwerty/digits)"
+msgstr "keyboard|Arabská (qwerty/číslice)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:65
+msgid "keyboard|Belgian (be-latin1)"
+msgstr "keyboard|Belgická (be-latin1)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:68
+msgid "keyboard|Bengali (Inscript)"
+msgstr "keyboard|Bengálska (Inscript)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:71
+msgid "keyboard|Bengali (Probhat)"
+msgstr "keyboard|Bengálska (Probhat)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:74
+msgid "keyboard|Bulgarian"
+msgstr "keyboard|Bulharská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:77
+msgid "keyboard|Bulgarian (Phonetic)"
+msgstr "keyboard|Bulharská (fonetická)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:80
+msgid "keyboard|Brazilian (ABNT2)"
+msgstr "keyboard|Brazílska (ABNT2)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:83
+msgid "keyboard|French Canadian"
+msgstr "keyboard|Kanadská - francúzska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:86
+msgid "keyboard|Croatian"
+msgstr "keyboard|Chorvátska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:89
+msgid "keyboard|Czech"
+msgstr "keyboard|Česká"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:92
+msgid "keyboard|Czech (qwerty)"
+msgstr "keyboard|Česká (qwerty)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:95
+msgid "keyboard|German"
+msgstr "keyboard|Nemecká"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:98
+msgid "keyboard|German (latin1)"
+msgstr "keyboard|Nemecká (latin1)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:101
+msgid "keyboard|German (latin1 w/ no deadkeys)"
+msgstr "keyboard|Nemecká (latin1 bez mŕtvych kláves)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:104
+msgid "keyboard|Devanagari (Inscript)"
+msgstr "keyboard|Devanagari (Inscript)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:107
+msgid "keyboard|Dvorak"
+msgstr "keyboard|Dvorak"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:110
+msgid "keyboard|Danish"
+msgstr "keyboard|Dánska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:113
+msgid "keyboard|Danish (latin1)"
+msgstr "keyboard|Dánska (latin1)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:116
+msgid "keyboard|Spanish"
+msgstr "keyboard|Španielska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:119
+msgid "keyboard|Estonian"
+msgstr "keyboard|Estónska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:122
+msgid "keyboard|Finnish"
+msgstr "keyboard|Fínska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:125
+msgid "keyboard|Finnish (latin1)"
+msgstr "keyboard|Fínska (latin1)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:128
+msgid "keyboard|French"
+msgstr "keyboard|Francúzska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:131
+msgid "keyboard|French (latin9)"
+msgstr "keyboard|Francúzska (latin9)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:134
+msgid "keyboard|French (latin1)"
+msgstr "keyboard|Francúzska (latin1)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:137
+msgid "keyboard|French (pc)"
+msgstr "keyboard|Francúzska (pc)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:140
+msgid "keyboard|Swiss French"
+msgstr "keyboard|Švajčiarska - francúzska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:143
+msgid "keyboard|Swiss French (latin1)"
+msgstr "keyboard|Švajčiarska - francúzska (latin1)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:146
+msgid "keyboard|Greek"
+msgstr "keyboard|Grécka"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:149
+msgid "keyboard|Gujarati (Inscript)"
+msgstr "keyboard|Gudžarátska (Inscript)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:152
+msgid "keyboard|Punjabi (Inscript)"
+msgstr "keyboard|Pandžábska (Inscript)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:155
+msgid "keyboard|Hungarian"
+msgstr "keyboard|Maďarská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:158
+msgid "keyboard|Hungarian (101 key)"
+msgstr "keyboard|Maďarská (101 kláves)"
+
+#: ../lib/keyboard_models.py:159
+msgid "keyboard|Irish"
+msgstr "keyboard|Írska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:162
+msgid "keyboard|Icelandic"
+msgstr "keyboard|Islandská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:165
+msgid "keyboard|Italian"
+msgstr "keyboard|Talianska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:168
+msgid "keyboard|Italian (IBM)"
+msgstr "keyboard|Talianska (IBM)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:171
+msgid "keyboard|Italian (it2)"
+msgstr "keyboard|Talianska (it2)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:174
+msgid "keyboard|Japanese"
+msgstr "keyboard|Japonská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:177
+msgid "keyboard|Korean"
+msgstr "keyboard|Kórejská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:180
+msgid "keyboard|Latin American"
+msgstr "keyboard|Latinskoamerická"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:183
+msgid "keyboard|Macedonian"
+msgstr "keyboard|Macedónska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:186
+msgid "keyboard|Dutch"
+msgstr "keyboard|Holandská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:189
+msgid "keyboard|Norwegian"
+msgstr "keyboard|Nórska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:192
+msgid "keyboard|Polish"
+msgstr "keyboard|Poľská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:195
+msgid "keyboard|Portuguese"
+msgstr "keyboard|Portugalská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:198
+msgid "keyboard|Romanian"
+msgstr "keyboard|Rumunská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:201
+msgid "keyboard|Romanian Standard"
+msgstr "keyboard|Rumunská štandardná"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:204
+msgid "keyboard|Romanian Cedilla"
+msgstr "keyboard|Rumunská Cedilla"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:207
+msgid "keyboard|Romanian Standard Cedilla"
+msgstr "keyboard|Rumunská štandardná Cedilla"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:210
+msgid "keyboard|Russian"
+msgstr "keyboard|Ruská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:213
+msgid "keyboard|Serbian"
+msgstr "keyboard|Srbská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:216
+msgid "keyboard|Serbian (latin)"
+msgstr "keyboard|Srbská (latin)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:219
+msgid "keyboard|Swedish"
+msgstr "keyboard|Švédska"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:222
+msgid "keyboard|Swiss German"
+msgstr "keyboard|Švajčiarska - nemecká"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:225
+msgid "keyboard|Swiss German (latin1)"
+msgstr "keyboard|Švajčiarska - nemecká (latin1)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:228
+msgid "keyboard|Slovak (qwerty)"
+msgstr "keyboard|Slovenská (qwerty)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:231
+msgid "keyboard|Slovenian"
+msgstr "keyboard|Slovinská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:234
+msgid "keyboard|Tajik"
+msgstr "keyboard|Tadžická"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:237
+msgid "keyboard|Tamil (Inscript)"
+msgstr "keyboard|Tamilská (Inscript)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:240
+msgid "keyboard|Tamil (Typewriter)"
+msgstr "keyboard|Tamilská (Typewriter)"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:243
+msgid "keyboard|Turkish"
+msgstr "keyboard|Turecká"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:246
+msgid "keyboard|United Kingdom"
+msgstr "keyboard|Britská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:249
+msgid "keyboard|Ukrainian"
+msgstr "keyboard|Ukrajinská"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:252
+msgid "keyboard|U.S. International"
+msgstr "keyboard|USA medzinárodná"
+
+#. Translators: the word before the bar is just context and
+#. doesn't need to be translated. Only after will be translated.
+#: ../lib/keyboard_models.py:255
+msgid "keyboard|U.S. English"
+msgstr "keyboard|USA anglická"
+
+#~ msgid "Starting graphical mode failed.  Starting text mode instead."
+#~ msgstr ""
+#~ "Štart grafického režimu zlyhal. Namiesto toho spúšťam textový režim."
+
+#~ msgid "keyboard|Czechoslovakian (qwertz)"
+#~ msgstr "keyboard|Československá (qwertz)"
+
+#~ msgid "keyboard|Czechoslovakian"
+#~ msgstr "keyboard|Československá"
+
+#~ msgid "keyboard|Russian (cp1251)"
+#~ msgstr "keyboard|Ruská (cp1251)"
+
+#~ msgid "keyboard|Russian (utf8ru)"
+#~ msgstr "keyboard|Ruská (utf8ru)"
+
+#~ msgid "keyboard|Russian (Microsoft)"
+#~ msgstr "keyboard|Ruská (Microsoft)"
+
+#~ msgid "keyboard|Russian (ru1)"
+#~ msgstr "keyboard|Ruská (ru1)"
+
+#~ msgid "keyboard|Russian (ru2)"
+#~ msgstr "keyboard|Ruská (ru2)"
+
+#~ msgid "keyboard|Russian (win)"
+#~ msgstr "keyboard|Ruská (win)"
+
+#~ msgid "keyboard|Slovakian"
+#~ msgstr "keyboard|Slovenská"

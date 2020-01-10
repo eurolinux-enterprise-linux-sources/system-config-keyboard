@@ -1,0 +1,10 @@
+[Desktop Entry]
+_Name=Keyboard
+_Comment=Configure the system keyboard
+Icon=system-config-keyboard
+Exec=system-config-keyboard
+Type=Application
+Categories=Settings;System;HardwareSettings;
+StartupNotify=true
+Terminal=false
+NotShowIn=GNOME;KDE;
