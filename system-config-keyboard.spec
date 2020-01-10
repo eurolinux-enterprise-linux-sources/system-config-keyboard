@@ -3,7 +3,7 @@
 
 Name:           system-config-keyboard
 Version:        1.3.1
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        A graphical interface for modifying the keyboard
 
 Group:          System Environment/Base
@@ -13,6 +13,7 @@ Source0:        https://fedorahosted.org/releases/s/y/system-config-keyboard/%{n
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Patch0:         system-config-keyboard-translation_#553225.patch
 Patch1:         system-config-keyboard-1.3.1-rhbz#606820.patch
+Patch2:         system-config-keyboard-1.3.1-missing-ok-button.patch
 
 BuildRequires:  desktop-file-utils
 BuildRequires:  gettext
@@ -47,6 +48,7 @@ Base components of system-config-keyboard.
 %setup -q
 %patch0 -p0 -b .translation_#553225
 %patch1 -p1 -b .rhbz#606820
+%patch2 -p1 -b .missing-ok-button
 
 %build
 make
@@ -99,6 +101,10 @@ fi
 
 
 %changelog
+* Tue Sep 09 2014 Nils Philippsen <nils@redhat.com> - 1.3.1-6
+- don't accidentally remove OK button (#1136833)
+- fix bogus changelog date
+
 * Fri Jun 07 2013 Nils Philippsen <nils@redhat.com> - 1.3.1-5
 - remove firstboot dependency (#952125)
 
@@ -432,6 +438,6 @@ fi
 * Tue May 28 2002 Jeremy Katz <katzj@redhat.com>
 - changes to be usable within an anaconda context 
 
-* Tue Dec 05 2001 Brent Fox <bfox@redhat.com>
+* Wed Dec 05 2001 Brent Fox <bfox@redhat.com>
 - initial coding and packaging
 

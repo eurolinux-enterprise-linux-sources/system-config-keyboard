@@ -1,0 +1,15 @@
+diff -up system-config-keyboard-1.3.1/src/keyboard_gui.py.missing-ok-button system-config-keyboard-1.3.1/src/keyboard_gui.py
+--- system-config-keyboard-1.3.1/src/keyboard_gui.py.missing-ok-button	2009-07-27 02:31:30.000000000 +0200
++++ system-config-keyboard-1.3.1/src/keyboard_gui.py	2014-09-09 14:37:09.644023961 +0200
+@@ -255,8 +255,10 @@ class moduleClass(Module):
+         okButton.connect("clicked", self._okClicked)
+ 
+         # Remove the hsep from the dialog.  It's ugly.
++        # This is only relevant for older versions of gtk+-2.x.
+         hsep = self.mainWindow.get_children()[0].get_children()[0]
+-        self.mainWindow.get_children()[0].remove(hsep)
++        if isinstance(hsep, gtk.HSeparator):
++            self.mainWindow.get_children()[0].remove(hsep)
+ 
+         self.mainWindow.vbox.pack_start(self.vbox)
+         self.mainWindow.show_all()
