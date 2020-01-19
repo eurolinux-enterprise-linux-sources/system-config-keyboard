@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+"-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+"http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+
+ <vendor>System Config Keyboard</vendor>
+ <vendor_url>http://fedoraproject.org/wiki/SystemConfig/keyboard</vendor_url>
+
+ <action id="org.fedoraproject.config.keyboard.pkexec.run">
+    <description>Run System Config Keyboard</description>
+    <message>Authentication is required to run system-config-keyboard</message>
+    <icon_name>system-config-keyboard</icon_name>
+    <defaults>
+     <allow_any>no</allow_any>
+     <allow_inactive>no</allow_inactive>
+     <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/sbin/system-config-keyboard</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+ </action>
+</policyconfig>

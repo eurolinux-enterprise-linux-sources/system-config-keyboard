@@ -1,0 +1,24 @@
+.TH "SYSTEM CONFIG KEYBOARD" "8" "" "" ""
+.SH "NAME"
+system\-config\-keyboard \- configure the keyboard layout of the system
+.SH "SYNOPSIS"
+.B system\-config\-keyboard
+[\fI\-\-help\fR]
+[\fI\-\-noui\fR]
+[\fI\-\-text\fR]
+[\fI<keyboardtype>\fR]
+.SH "DESCRIPTION"
+\fBsystem\-config\-keyboard\fR is a graphical user interface that allows
+the user to change the default keyboard of the system.
+.TP
+\fB\-\-help\fR
+Display a short help message and list of keyboard types.
+.TP
+\fB\-\-noui\fR
+Run in command line mode.
+.TP
+\fB\-\-text\fR
+Run in text interface mode.
+.TP
+\fB<keyboardtype>\fR Run with \fB\-\-help\fR to get a list of supported
+keyboard types.

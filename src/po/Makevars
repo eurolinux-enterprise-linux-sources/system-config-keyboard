@@ -1,0 +1,3 @@
+top_builddir = ..
+DOMAIN = system-config-keyboard
+MSGID_BUGS_ADDRESS = lkundrak@v3.sk

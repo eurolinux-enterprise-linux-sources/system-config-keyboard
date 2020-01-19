@@ -1,0 +1,11 @@
+system-config-keyboard.desktop.in
+src/keyboard_backend.py
+src/keyboard_cli.py
+src/keyboard_gui.py
+src/keyboard_gui.py.orig
+src/keyboard_tui.py
+src/system-config-keyboard
+src/system-config-keyboard.py
+lib/__init__.py
+lib/keyboard.py
+lib/keyboard_models.py
