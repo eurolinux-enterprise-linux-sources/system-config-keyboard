@@ -3,7 +3,7 @@
 
 Name:           system-config-keyboard
 Version:        1.4.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        A graphical interface for modifying the keyboard
 
 Group:          System Environment/Base
@@ -101,6 +101,9 @@ fi
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.4.0-4
+- Mass rebuild 2013-12-27
+
 * Thu Aug 15 2013 Nils Philippsen <nils@redhat.com> - 1.4.0-3
 - remove trailing whitespace
 - make package noarch again (#921542)
