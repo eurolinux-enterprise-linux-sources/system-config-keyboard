@@ -3,13 +3,12 @@
 
 Name:           system-config-keyboard
 Version:        1.4.0
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        A graphical interface for modifying the keyboard
 
 Group:          System Environment/Base
 License:        GPLv2+
-URL:            https://fedorahosted.org/system-config-keyboard/
-Source0:        https://fedorahosted.org/releases/s/y/system-config-keyboard/%{name}-%{version}.tar.bz2
+Source0:        %{name}-%{version}.tar.bz2
 
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -101,6 +100,9 @@ fi
 
 
 %changelog
+* Mon Jul 16 2018 Jan Synáček <jsynacek@redhat.com> - 1.4.0-5
+- remove invalid source links (#1502436)
+
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.4.0-4
 - Mass rebuild 2013-12-27
 
